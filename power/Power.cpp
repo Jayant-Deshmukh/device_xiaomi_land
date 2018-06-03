@@ -128,8 +128,8 @@ done:
     return Void();
 }
 
-Return<int32_t> Power::getFeature(LineageFeature feature)  {
-    if (feature == LineageFeature::SUPPORTED_PROFILES) {
+Return<int32_t> Power::getFeature(CandyFeature feature)  {
+    if (feature == CandyFeature::SUPPORTED_PROFILES) {
         return get_number_of_profiles();
     }
     return -1;
@@ -146,7 +146,7 @@ status_t Power::registerAsSystemService() {
         ALOGI("Successfully registered IPower");
     }
 
-    ret = ILineagePower::registerAsService();
+    ret = ICandyPower::registerAsService();
     if (ret != 0) {
         ALOGE("Failed to register ILineagePower (%d)", ret);
         goto fail;
