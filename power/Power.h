@@ -19,7 +19,7 @@
 #define ANDROID_HARDWARE_POWER_V1_0_POWER_H
 
 #include <android/hardware/power/1.0/IPower.h>
-#include <vendor/lineage/power/1.0/ILineagePower.h>
+#include <vendor/candy/power/1.0/ICandyPower.h>
 #include <hidl/MQDescriptor.h>
 #include <hidl/Status.h>
 #include <hardware/power.h>
@@ -33,12 +33,12 @@ namespace implementation {
 using ::android::hardware::power::V1_0::Feature;
 using ::android::hardware::power::V1_0::PowerHint;
 using ::android::hardware::power::V1_0::IPower;
-using ::vendor::lineage::power::V1_0::ILineagePower;
-using ::vendor::lineage::power::V1_0::LineageFeature;
+using ::vendor::candy::power::V1_0::ICandyPower;
+using ::vendor::candy::power::V1_0::CandyFeature;
 using ::android::hardware::Return;
 using ::android::hardware::Void;
 
-struct Power : public IPower, public ILineagePower {
+struct Power : public IPower, public ICandyPower {
     // Methods from ::android::hardware::power::V1_0::IPower follow.
 
     Power();
@@ -49,8 +49,8 @@ struct Power : public IPower, public ILineagePower {
     Return<void> setFeature(Feature feature, bool activate) override;
     Return<void> getPlatformLowPowerStats(getPlatformLowPowerStats_cb _hidl_cb) override;
 
-    // Methods from ::vendor::lineage::power::V1_0::ILineagePower follow.
-    Return<int32_t> getFeature(LineageFeature feature) override;
+    // Methods from ::vendor::candy::power::V1_0::ILineagePower follow.
+    Return<int32_t> getFeature(CandyFeature feature) override;
 
     // Methods from ::android::hidl::base::V1_0::IBase follow.
 
