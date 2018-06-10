@@ -14,6 +14,6 @@
 # limitations under the License.
 #
 
-add_lunch_combo liquid_land-userdebug
+add_lunch_combo aosp_land-userdebug
 
 
