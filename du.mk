@@ -42,3 +42,6 @@ BUILD_FINGERPRINT := Xiaomi/land/land:6.0.1/MMB29M/V9.5.1.0.MALMIFA:user/release
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
 DEVICE_MAINTAINERS="Jayant-Deshmukh"
+
+ro.mod.version=$(DU_BUILD_TYPE)-$(DU_BASE_VERSION)-$(DATE)
+
