@@ -24,11 +24,6 @@
 	<!-- Whether the device supports Smart Pixels -->
 	<bool name="config_enableSmartPixels">true</bool>	
 	
-	 <!-- Rounded Corner Overlay -->
-    <dimen name="rounded_corner_colt_radius">8.0dip</dimen>
-    <dimen name="rounded_corner_radius">10.0dip</dimen>
-    <dimen name="notification_shadow_radius">15.0dip</dimen>
-	
     <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
          The N entries of this array define N + 1 control points as follows:
          (1-based arrays)
