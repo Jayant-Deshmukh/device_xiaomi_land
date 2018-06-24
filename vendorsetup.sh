@@ -14,4 +14,4 @@
 # limitations under the License.
 #
 
-add_lunch_combo du_land-userdebug
+add_lunch_combo screwd_land-userdebug
