@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Validus stuff
-$(call inherit-product, vendor/screwd/main.mk)
+$(call inherit-product, vendor/pixeldust/configs/pixeldust_phone.mk)
 
 # Inherit from land device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -29,7 +29,7 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 3S
 PRODUCT_DEVICE := land
 PRODUCT_MANUFACTURER := Wingtech
-PRODUCT_NAME := screwd_land
+PRODUCT_NAME := pixeldust_land
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
