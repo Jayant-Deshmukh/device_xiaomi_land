@@ -14,4 +14,4 @@
 # limitations under the License.
 #
 
-add_lunch_combo pixeldust_land-userdebug
+add_lunch_combo pa_land-userdebug
