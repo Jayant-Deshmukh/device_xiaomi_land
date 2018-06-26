@@ -1,3 +1,2 @@
-ifeq (pixeldust_land,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/screwd_land.mk
-endif
+PRODUCT_MAKEFILES += \
+    $(LOCAL_DIR)/bacon/pa_land.mk 
