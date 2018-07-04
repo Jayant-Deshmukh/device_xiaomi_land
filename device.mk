@@ -434,6 +434,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/fstman.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/fstman.ini \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
+    
+# Configs
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/configs/apns-conf.xml:system/etc/apns-conf.xml    
 
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
