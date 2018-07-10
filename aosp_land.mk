@@ -22,6 +22,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Validus stuff
 $(call inherit-product, vendor/aosp/config/common.mk)
 
+TARGET_BOOT_ANIMATION_RES := 720
+
 # Inherit from land device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
