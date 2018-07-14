@@ -21,8 +21,10 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1280
-TARGET_SCREEN_WIDTH := 720
+#TARGET_SCREEN_HEIGHT := 1280
+#TARGET_SCREEN_WIDTH := 720
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/configs/bootanimation.zip:system/media/bootanimation.zip   
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
