@@ -26,6 +26,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/configs/bootanimation.zip:system/media/bootanimation.zip   
 
+# Charger
+include $(LOCAL_PATH)/rootdir/charger/charger.mk
+
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
