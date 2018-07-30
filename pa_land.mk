@@ -15,12 +15,15 @@
 # limitations under the License.
 #
 
+# Check for the target product.
+ifeq (pa_land,$(TARGET_PRODUCT))
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Validus stuff
-$(call inherit-product, vendor/pixeldust/configs/pixeldust_phone.mk)
+$(call inherit-product, vendor/pa/main.mk)
 
 # Inherit from land device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -29,7 +32,7 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 3S
 PRODUCT_DEVICE := land
 PRODUCT_MANUFACTURER := Wingtech
-PRODUCT_NAME := pixeldust_land
+PRODUCT_NAME := pa_land
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
@@ -42,6 +45,3 @@ BUILD_FINGERPRINT := Xiaomi/land/land:6.0.1/MMB29M/V9.5.1.0.MALMIFA:user/release
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
 DEVICE_MAINTAINERS="Jayant-Deshmukh"
-
-
-
