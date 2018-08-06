@@ -446,3 +446,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/land/land-vendor.mk)
+
+PRODUCT_PACKAGES += \
+    messaging \
+    Ruthless_Launcher
