@@ -48,9 +48,6 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --second_offset 0x00f00000 -
 TARGET_KERNEL_CONFIG := land_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8937
 
-# ANT+
-BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
-
 # Audio
 AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
 AUDIO_FEATURE_ENABLED_ACDB_LICENSE := true
