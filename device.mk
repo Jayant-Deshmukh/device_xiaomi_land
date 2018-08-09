@@ -449,7 +449,8 @@ $(call inherit-product-if-exists, vendor/xiaomi/land/land-vendor.mk)
 
 PRODUCT_PACKAGES += \
     messaging \
-    Ruthless_Launcher
+    Ruthless_Launcher \
+    Mixplorer
 
 PRODUCT_PACKAGES -= \
     Launcher3
