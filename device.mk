@@ -451,6 +451,3 @@ PRODUCT_PACKAGES += \
     messaging \
     Ruthless_Launcher \
     Mixplorer
-
-PRODUCT_PACKAGES -= \
-    Launcher3
