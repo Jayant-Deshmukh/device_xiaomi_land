@@ -220,6 +220,10 @@ function configure_memory_parameters() {
     if [ -f /sys/module/lowmemorykiller/parameters/oom_reaper ]; then
         echo 1 > /sys/module/lowmemorykiller/parameters/oom_reaper
     fi
+    
+    if [ $MemTotal -le 2097152 ]; then
+        setprop ro.config.low_ram true
+    fi
 
     configure_zram_parameters
 
