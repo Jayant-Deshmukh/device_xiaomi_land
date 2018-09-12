@@ -25,7 +25,6 @@
 	
 	<!-- Whether the device supports Smart Pixels -->
 	<bool name="config_enableSmartPixels">true</bool>
-	
 
     <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
          The N entries of this array define N + 1 control points as follows:
